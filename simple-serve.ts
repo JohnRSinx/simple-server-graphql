@@ -18,6 +18,7 @@ const server = new ApolloServer({
       users: () => {
         return users;
       },
+
       Mutation: {
         createUser: (parent: any, args: any, ctx: any) => {
           users.push(args.name);
